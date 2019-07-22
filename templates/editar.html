@@ -2,13 +2,49 @@
 
 {% block content   %}
 
-<form action="/update/{{ usuario.0 }}" class="p-4 m-4" method="POST">
 
-    <input type="text" name="user" value="{{ usuario.1 }}">
-    <input type="password" name="pass" value=" {{ usuario.2 }}">
-    <input type="email" name="correo" value="{{ usuario.3 }}">
-    <input type="submit" value="guardar" class="btn btn-dark">
-    <input type="submit" value="cancelar" class="btn btn-dark">
+<div class="row">
 
-</form>
+    <div class="col-5  m-auto">
+
+        <div class="card card-body">
+
+
+            <form action="/update/{{ usuario.0 }}" class="p-4 m-4" method="POST">
+
+                <div class="form-group">
+                    <input type="text" name="user" value="{{ usuario.1 }}" class="form-control" >
+
+                </div>
+
+                <div class="form-group">
+                    <input type="password" name="pass" value=" {{ usuario.2 }}"class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="email" name="correo" value="{{ usuario.3 }}"class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="guardar" class="btn btn-danger btn-block"class="form-control">
+                </div>
+                <div class="form-group">
+
+                <input type="submit" value="cancelar" class="btn btn-danger btn-block"class="form-control">
+                </div>
+
+
+
+
+
+            </form>
+
+
+        </div>
+
+
+    </div>
+
+</div>
+
+
+
 {%  endblock %}

@@ -53,11 +53,6 @@ def update(id):
         mysql.connection.commit()
         flash('guardado correctamente')
         return redirect(url_for('home'))
-
-
-
-
-
 @app.route('/edit/<id>')
 def get_edit(id):
     cur=mysql.connection.cursor()

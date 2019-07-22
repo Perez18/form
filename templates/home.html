@@ -1,8 +1,10 @@
 {% extends 'layout.html' %}
 
 {% block content   %}
+<!-- Image and text -->
+<!-- Image and text -->
 <div class="row">
-    <div class="col-5">
+    <div class="col-5 m-auto">
         {% with messages = get_flashed_messages() %}
         {% if messages %}
         {% for message in messages %}
@@ -27,14 +29,14 @@
                     <input type="email" placeholder="correo@ejemplo.com" name="correo" class="form-control">
                 </div>
                 <div class="form-group">
-                    <button type='submit' class="btn btn-success btn-block" name="Enviar" class="form-control">enviar</button>
+                    <button type='submit' class="btn btn-primary btn-block" name="Enviar" class="form-control">enviar</button>
                 </div>
 
             </form>
         </div>
 
     </div>
-    <div class="col-5">
+    <div class="col-5 m-auto">
 
         <table class="table table-striped table-bordered bg-white table-sm">
             <tr>
@@ -57,13 +59,5 @@
         </table>
     </div>
 </div>
-
-
-
-
-
-
-
-
 
 {%  endblock %}
